@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="sunny.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="container">
+        <h3>Weather App</h3>
+        
+        <form class="search-box">
+            <input type="text" placeholder="Enter City Name" autocomplete="off" required>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <p class="error-msg">City not found. Please try again.</p>
+
+        <div id="weather-card" class="weather-card">
+            <img src="" alt="Weather Icon" class="weather-icon">
+            <h2 class="city"></h2>
+            <h1 class="temp"></h1>
+            <p class="condition"></p>
+
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="info">
+                        <p class="humidity"></p>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="info">
+                        <p class="wind_kph"></p>
+                        <span>Wind Speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- rainy weather app, sunny weather app, cloudy weather app, snow weather app, stormy weather app, foggy weather app, 
+ windy weather app, hot weather app, cold weather app, humid weather app, dry weather app -->
+
+
+<!-- Done rainy weather link - https://www.vecteezy.com/video/9516636-raindrops-on-the-inflorescence-of-dill-slow-motion -->
+<!-- Done sunny weather link - https://www.vecteezy.com/video/7563056-cartoon-landscape-with-hills-and-forest -->
+<!-- Done cloudy weather link - https://www.vecteezy.com/video/72907192-dramatic-lightning-strikes-illuminate-stormy-dark-clouds-over-a-golden-field-at-dusk -->
+<!-- Done snow weather link - https://www.vecteezy.com/video/76096040-snow-falling-in-a-forest-with-trees-and-snow-falling -->
+<!-- Done stormy weather link - https://www.vecteezy.com/video/78254004-lightning-strikes-in-the-sky-over-a-dark-stormy-night -->
+<!-- Done foggy weather link - https://www.vecteezy.com/video/72283061-a-light-shines-on-a-white-background -->
+<!-- Done windy weather link - https://www.vecteezy.com/video/14306900-a-storm-is-forming-in-the-sky -->
